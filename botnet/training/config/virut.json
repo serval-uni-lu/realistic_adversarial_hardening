@@ -1,0 +1,17 @@
+{
+  "distances": [ "12" ],
+  "iterations": 5,
+  "epochs": 10,
+  "LAYERS": [ 256, 128, 64 ],
+  "INPUT_DIM": [ 64, 1, 756 ],
+  "LR": [ 0.0002592943797404667 ],
+  "path_to_save": "../out/datasets/virut/fence_10epochs",
+  "scaler_path": "../data/virut/scaler_virut.pkl",
+  "min_features": "../data/virut/minimum_virut.txt",
+  "max_features": "../data/virut/maximum_virut.txt",
+  "intermediate_model_path": "intermediate_virut.h5",
+  "x_train": "../data/virut/training_samples.npy",
+  "y_train": "../data/virut/training_labels.npy",
+  "x_test": "../data/virut/testing_samples.npy",
+  "y_test": "../data/virut/testing_labels.npy",
+}

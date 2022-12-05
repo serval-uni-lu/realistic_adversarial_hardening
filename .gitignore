@@ -1,0 +1,12 @@
+*.7z
+*.zip
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history
+.vs/*
+__pycache__
