@@ -1,5 +1,5 @@
 # Realistic adversarial hardening
-This repository contains the data and the code used for S&amp;P 2023 [paper](https://arxiv.org/abs/2202.03277) "On The Empirical Effectiveness of Unrealistic Adversarial Hardening Against Realistic Adversarial Attacks"
+This repository contains the data and the code used for S&amp;P 2023 [paper](https://arxiv.org/abs/2202.03277) <em>"On The Empirical Effectiveness of Unrealistic Adversarial Hardening Against Realistic Adversarial Attacks"</em>. 
 The paper investigates whether "cheap" unrealistic adversarial attacks can be used to harden ML models against computationally expensive realistic attacks. 
 The paper studies 3 use cases and at least one realistic and one unrealistic attack for each one of them. 
 
@@ -37,4 +37,4 @@ Follow the links to get [general malware data](https://uniluxembourg-my.sharepoi
 [AIMED data](https://uniluxembourg-my.sharepoint.com/:u:/g/personal/salijona_dyrmishi_uni_lu/EY_SYilO1rZJq5r649KTVGwB_z5yk8wwc3iYKJPhqctzmA?e=si4fKp). You can download them and place them in their respective folders. 
 
 We have received the original PE files from  the authors of  <em>[When Malware is Packin’ Heat; Limits of Machine Learning Classifiers Based on
-Static Analysis Features](https://www.ndss-symposium.org/wp-content/uploads/2020/02/24310-paper.pdf)<em>. Please contact them if you will need access as well. 
+Static Analysis Features](https://www.ndss-symposium.org/wp-content/uploads/2020/02/24310-paper.pdf)</em>. Please contact them if you will need access as well. 
