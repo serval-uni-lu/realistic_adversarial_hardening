@@ -23,6 +23,8 @@ As an unrealistic attack we use the PGD implementation of [ART](https://adversar
 For the realistic attack we use the [FENCE](https://arxiv.org/pdf/1909.10480.pdf) attack by Chernikova et al. Our implementation in this repo includes updates from TensorFlow 1
 to TensorFlow 2, code refactoring and as well as bug fixes. However you can access the original repository by authors [here](https://github.com/achernikova/cybersecurity_evasion) if needed.
 
+If you need to do feature engineering for new datasets not included in this dataset check the tool from [Talha Ongun](https://github.com/tongun/ctu13-botnet-detection).
+
 ### 3. Malware detection
 We use 3 attacks: PGD and [MoEvA2](https://arxiv.org/abs/2112.01156) (unrealistic) and [AIMED](https://www.rapha.ai/files/AIMED.pdf) (realistic).
 
