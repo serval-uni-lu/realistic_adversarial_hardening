@@ -4,9 +4,9 @@ The paper investigates whether "cheap" unrealistic adversarial attacks can be us
 The paper studies 3 use cases (text, botnet, malware) and at least one realistic and unrealistic attack for each of them. 
 
 
-
-The data used for the results analysis can be downloaded all in this [link](https://uniluxembourg-my.sharepoint.com/:f:/g/personal/salijona_dyrmishi_uni_lu/Eo3LPuU7nVJBs5UyHEBadU8BkOOJHnCFXdGE55dNbCETow?e=YTyCXn). 
-To download only the data you are interested in please continue reading below. 
+## Downloading the data
+All the data used for the results analysis can be downloaded in this [link](https://uniluxembourg-my.sharepoint.com/:f:/g/personal/salijona_dyrmishi_uni_lu/Eo3LPuU7nVJBs5UyHEBadU8BkOOJHnCFXdGE55dNbCETow?e=YTyCXn). 
+To download use-case specific data please continue reading below. 
 
 
 ### 1. Text classification
@@ -33,7 +33,7 @@ For MoEvA2 we use and include in this repo an early version called Coeva2. If yo
 For AIMED we use and include in this repo a lighter version with only the necessary functionalities needed for this study. For the full code and functionalities check the authors original version in [here](https://github.com/zRapha/AIMED)
 
 
-### Accessing the data
+### Accessing data for individual use cases
 Follow the links to get [general malware data](https://uniluxembourg-my.sharepoint.com/:u:/g/personal/salijona_dyrmishi_uni_lu/EbPTPRvx3UJPmrxJj_4XdfQBQ0Vkk98_puA7KmOmnd6YIQ?e=aAjekF),
 [pgd_data](https://uniluxembourg-my.sharepoint.com/:u:/g/personal/salijona_dyrmishi_uni_lu/EST2XM7uyIRKjiuS5npkLFwBky6qANQfJwbuZ2jl3XJ58A?e=wwfPpL),
 [moeva2 data](https://uniluxembourg-my.sharepoint.com/:u:/g/personal/salijona_dyrmishi_uni_lu/EfcxLidDDRZEsE0Qcjz5-UQBUl4_brGhkHjwJUdJK3Oymw?e=mEe2kC),
