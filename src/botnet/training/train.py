@@ -24,7 +24,7 @@ def train(config, method='clean', callback=None, distance=12,  save_data=True):
 
     x_train, y_train, x_test, y_test = get_train_data(config)
     LAYERS, INPUT_DIM, LR = get_model_data(config)
-    scaler, min_features, max_features = get_processing_data(config)
+    scaler, min_features, max_features, mask_idx, eq_min_max = get_processing_data(config)
     iterations = config["iterations"]
     epochs = config["epochs"]
     ##Only for FENCE attack
@@ -37,7 +37,7 @@ def train(config, method='clean', callback=None, distance=12,  save_data=True):
             history_obj = nn.fit(x_train, y_train, verbose=1, epochs=epochs, batch_size=64,  shuffle=True)
 
         if method =="pgd":
-            dataGen = generate_adversarial_batch_pgd(nn, 64, x_train, y_train, distance, iterations, scaler=scaler, mins=min_features, maxs=max_features)
+            dataGen = generate_adversarial_batch_pgd(nn, 64, x_train, y_train, distance, iterations, scaler=scaler, mins=min_features, maxs=max_features, mask_idx=mask_idx, eq_min_max=eq_min_max)
             history_obj = nn.fit(dataGen, steps_per_epoch=len(x_train) // 64, verbose = 1, epochs = epochs, callbacks=callback)
 
         if method == "fence":
@@ -82,7 +82,7 @@ def train_save_epochs(config, attack):
 if __name__ == "__main__":
     
     config_file = "config/neris.json" 
-    attack = "fence" 
+    attack = "pgd" 
 
     train_save_epochs(config_file, attack)
 

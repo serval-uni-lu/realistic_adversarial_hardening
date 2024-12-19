@@ -13,5 +13,7 @@
   "x_train": "../data/rbot/training_samples.npy",
   "y_train": "../data/rbot/training_labels.npy",
   "x_test": "../data/rbot/testing_samples.npy",
-  "y_test": "../data/rbot/testing_labels.npy"
+  "y_test": "../data/rbot/testing_labels.npy",
+  "mask_idx": "../data/rbot/mutable_idx.npy",
+  "eq_min_max_idx":"../data/rbot/eq_min_max_idx.npy"
 }

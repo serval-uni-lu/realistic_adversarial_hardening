@@ -112,4 +112,6 @@ def get_model_data(config):
 def get_processing_data(config):
     scaler = joblib.load(config["scaler_path"])
     min_features, max_features = read_min_max(config["min_features"], config["max_features"])
-    return scaler, min_features, max_features
+    mask_idx = np.load(config["mask_idx"])
+    eq_min_max = np.load(config["eq_min_max_idx"])
+    return scaler, min_features, max_features, mask_idx, eq_min_max

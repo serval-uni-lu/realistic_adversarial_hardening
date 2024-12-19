@@ -46,6 +46,8 @@ class PgdRandomRestart():
     
         true_labels = np.squeeze(true_labels)
         target = 1 - true_labels
+        target = np.expand_dims(target, axis=1)
+
         #target = to_categorical(target, num_classes=2)
         kc_classifier = kc(self.model, clip_values=(self.clip_min, self.clip_max), nb_classes=2, input_shape=(756),  loss_object=tf.keras.losses.BinaryCrossentropy())
         pgd = PGD(kc_classifier)

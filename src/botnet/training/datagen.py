@@ -2,7 +2,7 @@ import sys
 sys.path.append('..')
 
 import numpy as np
-from attack.fence.neris_attack_tf2_modified import Neris_attack
+from attack.fence.neris_attack_tf2 import Neris_attack
 from attack.pgd.pgd_attack_art import PgdRandomRestart
 
 def generate_adversarial_batch_fence(model, total, samples, labels,  distance, iterations, scaler, mins, maxs, model_path):
@@ -29,10 +29,9 @@ def generate_adversarial_batch_fence(model, total, samples, labels,  distance, i
 
 		yield (np.array(perturbSamples), np.array(perturbLabels))
 
+def generate_adversarial_batch_pgd(model, total, samples, labels, distance, iterations, scaler, mins, maxs, mask_idx, eq_min_max):
 
-def generate_adversarial_batch_pgd(model, total, samples, labels, distance, iterations, scaler, mins, maxs):
-
-	attack_generator = PgdRandomRestart(model, eps = distance, alpha = 1, num_iter = iterations, restarts = 5, scaler=scaler, mins=mins, maxs=maxs )
+	attack_generator = PgdRandomRestart(model, eps = distance, alpha = 1, num_iter = iterations, restarts = 5, scaler=scaler, mins=mins, maxs=maxs, mask_idx=mask_idx, eq_min_max=eq_min_max)
 
 	while True:
 		idxs = np.random.choice(range(0, len(samples)), size=total, replace=False)
